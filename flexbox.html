@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            border: 2px dotted tomato;
+            display: flex;
+            justify-content: center;
+            /* justify-content: space-evenly;
+            justify-content: space-around;
+            justify-content: space-between; */
+            align-items: center;
+            /* align-items: stretch;
+            align-items: flex-end;
+            align-items: flex-start;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row; */
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            height: 600px;
+        }
+        .box-2{
+            /* flex-grow: 1; */
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 3px dashed khaki;
+            font-weight: 700;
+            font-size: 3ex;
+
+        }
+        .heading{
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>hello world. this is fardin</h1>
+    </div>
+    <div class="container">
+       
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box box-2">Box-4</div>
+       
+
+    </div>
+</body>
+</html>
